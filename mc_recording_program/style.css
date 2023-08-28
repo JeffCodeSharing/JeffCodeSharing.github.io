@@ -1,0 +1,31 @@
+body {
+  font-family: "宋体";
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #0000ff;
+  font-size: 42pt;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16pt;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+u {
+  text-decoration: underline;
+}
