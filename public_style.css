@@ -22,12 +22,17 @@ li {
     list-style: none;
 }
 
+p {
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+
 a {
     color: #31428F;
     text-decoration: none;
 }
 
-li a:hover {
+a:hover {
     text-decoration: underline;
 }
 
