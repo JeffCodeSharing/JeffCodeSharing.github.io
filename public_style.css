@@ -10,3 +10,12 @@ li {
     margin-bottom: 10px;
     list-style: none;
 }
+
+li a {
+    color: #31428F;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
