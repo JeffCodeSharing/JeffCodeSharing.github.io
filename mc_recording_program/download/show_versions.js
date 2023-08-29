@@ -4,6 +4,19 @@ fetch("https://jeffcodesharing.github.io/files/mc_recording_program/versions.jso
     const versions = data.versions;
     const release = data.release;
 
+    const release_list = document.getElementById("release_list");
+
+    const release_item = document.createElement("li");
+    const release_link = document.createElement("a");
+
+    release_link.textContent = release;
+    release_link.setAttribute("download", release + ".rar");
+    release_link.href = 
+      "https://jeffcodesharing.github.io/files/mc_recording_program/" + release + ".rar";
+    
+    release_item.appendChild(release_link);
+    release_list.appendChild(release_item);
+
     const list = document.getElementById("version_list");
 
     versions.forEach(version => {
