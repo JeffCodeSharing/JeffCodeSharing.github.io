@@ -1,31 +1,7 @@
-body {
-        font-family: "宋体";
-        text-align: center;
-        background-color: #f0f0f0;
-        margin: 0;
-        padding: 20px;
-      }
+.warning {
+    color: #ff0000;
+}
 
-      h1 {
-        color: #0000ff;
-        font-size: 30pt;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-size: 15pt;
-        margin-bottom: 10px;
-      }
-
-      a {
-        color: #0000ff;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .warning {
-        color: #ff0000;
-      }
+.advice {
+    color: #ff8c00;
+}
