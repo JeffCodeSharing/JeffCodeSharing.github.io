@@ -1,21 +1,6 @@
-h1 {
-  color: #0000ff;
-  font-size: 42pt;
-  margin-bottom: 20px;
-}
-
 p {
   font-size: 16pt;
   margin-bottom: 10px;
-}
-
-a {
-  color: #0000ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 u {
