@@ -22,11 +22,18 @@ li {
     list-style: none;
 }
 
-li a {
+a {
     color: #31428F;
     text-decoration: none;
 }
 
 li a:hover {
     text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+    font-size: 14px;
 }
