@@ -28,28 +28,6 @@ h1 {
     text-decoration: underline;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #E6F4F9;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    list-style: none;
-}
-
-ul li a {
-    color: #0000FF;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
 footer {
     text-align: center;
     color: #666;
