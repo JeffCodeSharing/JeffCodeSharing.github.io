@@ -1,0 +1,25 @@
+body {
+  font-family: "宋体";
+  background-color: #f0f0f0;
+}
+
+p {
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #31428F;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+    font-size: 14px;
+}
