@@ -1,11 +1,11 @@
 {
-    "Root" : {
+    "root" : {
         "Create" : ["A.class"]
     }, 
-    "Lib" : {
+    "lib" : {
         "Create" : ["B.class"]
     }, 
-    "Bin" : {
+    "bin" : {
         "Create" : ["Hello", "Print.Hello"], 
         "Remove" : ["Bye", "Print.Bye"], 
         "Set" : ["Greet", "Print.Greet"]
