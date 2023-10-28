@@ -1,5 +1,13 @@
 {
-    "Create" : ["Hello", "Print.Hello"], 
-    "Remove" : ["Bye", "Print.Bye"], 
-    "Set" : ["Greet", "Print.Greet"]
+    "Root" : {
+        "Create" : ["A.class"]
+    }, 
+    "Lib" : {
+        "Create" : ["B.class"]
+    }, 
+    "Bin" : {
+        "Create" : ["Hello", "Print.Hello"], 
+        "Remove" : ["Bye", "Print.Bye"], 
+        "Set" : ["Greet", "Print.Greet"]
+    }
 }
