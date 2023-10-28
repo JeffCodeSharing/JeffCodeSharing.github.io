@@ -1,9 +1,9 @@
 {
     "root" : {
-        "Create" : ["A.class"]
+        "Create" : ["A"]
     }, 
     "lib" : {
-        "Create" : ["B.class"]
+        "Create" : ["B"]
     }, 
     "bin" : {
         "Create" : ["Hello", "Print.Hello"], 
