@@ -15,7 +15,7 @@
         } else {
           // 将单价的顺序进行规范
           if (price1>price2) {
-            var temp = price1;
+            temp = price1;
             price1 = price2;
             price2 = temp;
           }
@@ -26,11 +26,24 @@
 
           document.getElementById("result1").textContent = "单价为" + price1 + "元/个的商品有" + (x-y) + "个";
           document.getElementById("result2").textContent = "单价为" + price2 + "元/个的商品有" + y + "个";
+
+          // 减少差值的计算
+          c = x-y
+          d = y
+
+          z = price1 / (price2-price1)
+          w = (c-d) / (2z+1)
+
+          document.getElementById("result3").textContent = "单价为" + price1 + "元/个的商品有" + (c-(z+1)*w) + "个";
+          document.getElementById("result4").textContent = "单价为" + price2 + "元/个的商品有" + (d+z*w) + "个";
         }
       }
     </script>
   </head>
   <body>
+    <div>
+      注意！！！这里输入的单价请注意：单价的差值要以x.0, x.1, x.2, x.5结尾的才可以正常计算
+    </div>
     <div>
       <label>单价1：</label>
       <input id="price1" type="text" style="width: 200px; height: 40px;">
@@ -47,9 +60,14 @@
       <button onclick="calculate()" style="width: 80px; height: 40px;">计算</button>
     </div>
     <div>
-      <label>结果</label><br>
+      <label>结果（差值较大）</label><br>
       <label id="result1"></label><br>
-      <label id=result2></label>
+      <label id="result2"></label>
+    </div>
+    <div>
+      <label>结果（差值较小）</label><br>
+      <label id="result3"></label><br>
+      <label id="result4"></label>
     </div>
     <footer>&copy;By JeffCodeSharing on GitHub</footer>
   </body>
