@@ -1,6 +1,46 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <title>Welcome</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="public_style.css" />
+  </head>
+  <body>
+    <div class="cheerDiv">
+      <img src="image.jpeg" alt="The Image is lost">
+      <label class="cheerText">↓向下探索未知↓</label>
+    </div>
     <script>
-        window.location.href="https://codeforfree.kesug.com"
+  	window.addEventListener('scroll', function() {
+    	  var cheerText = document.querySelector('.cheerText');
+    	  if (window.scrollY > 0) {
+            cheerText.style.opacity= 0;
+    	  } else {
+      	    cheerText.style.opacity= 1;
+    	  }
+  	});
     </script>
+
+    <br><br>
+
+    <div style="text-align:center;">
+      <div class="doingDiv">
+        <p><span>学习网站</span></p>
+        <p><span>MC管理器</span></p>
+      </div>
+    
+      <div class="detailTotalDiv">
+        <h1>实用程序</h1>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+        <div class="detailTotalDiv">
+            <h1>杂项</h1><br>
+            <a href="stuff/countingQuality.html">定总价计算数量</a>
+        </div>
+    </div>
+
+    <footer>&copy;By JeffCodeSharing on GitHub</footer>
+  </body>
 </html>
