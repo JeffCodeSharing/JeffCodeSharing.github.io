@@ -9,7 +9,7 @@
         const price2 = parseFloat(document.getElementById("price2").value);
         const priceTotal = parseFloat(document.getElementById("priceTotal").value);
 
-        if ((price1==NaN) && (price2==NaN) && (priceTotal==NaN)) {
+        if ((price1==NaN) || (price2==NaN) || (priceTotal==NaN)) {
           const result1 = document.getElementById("result1");
           result1.textContent = "错误";
         } else {
