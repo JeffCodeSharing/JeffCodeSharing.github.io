@@ -5,14 +5,17 @@
     <link rel="stylesheet" href="https://jeffcodesharing.github.io/public_style.css" />
     <script>
       function calculate() {
-        try {
-          const price1 = parseFloat(document.getElementById("price1").value);
-          const price2 = parseFloat(document.getElementById("price2").value);
-          alert(price1);
-        } catch (error) {
+        const price1 = parseFloat(document.getElementById("price1").value);
+        const price2 = parseFloat(document.getElementById("price2").value);
+        const priceTotal = parseFloat(document.getElementById("priceTotal").value);
+
+        if ((price1==Nan) && (price2==Nan) && (priceTotal==Nan)) {
           const result1 = document.getElementById("result1");
           result1.textContent = "错误";
-        }
+      } else {
+          alert(price1);
+          alert(price2);
+          alert(priceTotal);
       }
     </script>
   </head>
