@@ -19,9 +19,13 @@
             price1 = price2;
             price2 = temp;
           }
-          alert(price1);
-          alert(price2);
-          alert(priceTotal);
+
+          // 计算
+          x = Math.trunc(priceTotal/price1);
+          y = (priceTotal - x*price1) / (price2-price1)
+
+          document.getElementById("result1").textContent("单价为" + price1 + "元/个的商品有" + (x-y) + "个");
+          document.getElementById("result1").textContent("单价为" + price2 + "元/个的商品有" + y + "个");
         }
       }
     </script>
