@@ -1,0 +1,51 @@
+img {
+  width: 75%; 
+  height: auto;
+}
+
+.cheerDiv {
+  position: relative;
+  text-align: center;
+}
+
+.cheerText {
+  font-size: 4vw;
+  color: white;
+  position: absolute;
+  top:40%;
+  left:36%;
+  opacity: 1;
+  animation: moveText 4s ease-in-out infinite;
+}
+
+.doingDiv {
+  border: 2px solid #4d79ff;
+  width: 13%;
+  border-radius: 10px;
+  display: inline-block;
+    position: relative;
+}
+
+.detailTotalDiv {
+  border: 2px solid #4d79ff;
+  width: 70%;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.detailDiv {
+  border: 2px solid #4d79ff;
+  border-radius: 10px;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

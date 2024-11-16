@@ -1,0 +1,23 @@
+body {
+  background-color: #F2F2F2;
+}
+
+footer {
+ color: #808080;
+  font-size: 12px;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  font-size: 40px;
+    font-family: "宋体";
+}
+
+span {
+    color: black;
+    background-color: #B0E2FF;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 5px;
+}
