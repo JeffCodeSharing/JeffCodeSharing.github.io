@@ -3,6 +3,7 @@
     <title>定总价算数量</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://jeffcodesharing.github.io/public_style.css" />
+    <script src="calculating.js"></script>
   </head>
   <body>
     <div>
@@ -18,7 +19,12 @@
       <input id="priceTotal" type="text" style="width: 200px; height: 40px;">
     </div>
     <div>
-      <button onclick="alert('您单击了按钮！')" style="width: 80px; height: 40px;">计算</button>
+      <label>结果</label>
+      <label id="result1"></label>
+      <label id=result2></label>
+    </div>
+    <div>
+      <button onclick="calculate()" style="width: 80px; height: 40px;">计算</button>
     </div>
     <footer>&copy;By JeffCodeSharing on GitHub</footer>
   </body>
