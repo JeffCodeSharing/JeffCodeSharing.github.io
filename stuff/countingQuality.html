@@ -32,7 +32,7 @@
           d = y
 
           z = price1 / (price2-price1)
-          w = (c-d) / (2z+1)
+          w = (c-d) / (2*z+1)
 
           document.getElementById("result3").textContent = "单价为" + price1 + "元/个的商品有" + (c-(z+1)*w) + "个";
           document.getElementById("result4").textContent = "单价为" + price2 + "元/个的商品有" + (d+z*w) + "个";
