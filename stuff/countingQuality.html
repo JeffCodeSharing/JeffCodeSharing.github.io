@@ -5,14 +5,20 @@
     <link rel="stylesheet" href="https://jeffcodesharing.github.io/public_style.css" />
     <script>
       function calculate() {
-        const price1 = parseFloat(document.getElementById("price1").value);
-        const price2 = parseFloat(document.getElementById("price2").value);
-        const priceTotal = parseFloat(document.getElementById("priceTotal").value);
+        var price1 = parseFloat(document.getElementById("price1").value);
+        var price2 = parseFloat(document.getElementById("price2").value);
+        var priceTotal = parseFloat(document.getElementById("priceTotal").value);
 
         if (isNaN(price1) || isNaN(price2) || isNaN(priceTotal)) {
           const result1 = document.getElementById("result1");
           result1.textContent = "错误";
         } else {
+          // 将单价的顺序进行规范
+          if (price1>price2) {
+            var temp = price1;
+            price1 = price2;
+            price2 = temp;
+          }
           alert(price1);
           alert(price2);
           alert(priceTotal);
