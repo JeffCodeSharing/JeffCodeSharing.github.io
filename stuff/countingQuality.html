@@ -3,7 +3,19 @@
     <title>定总价算数量</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://jeffcodesharing.github.io/public_style.css" />
-    <script src="calculating.js"></script>
+    <script>
+      function calculate() {
+        try {
+          const price1 = parseFloat(document.getElementById("price1").value);
+          const price2 = parseFloat(document.getElementById("price2").value);
+          console.log(1);
+        } catch (error) {
+          const result1 = document.getElementById("result1");
+          result1.textContent = "错误";
+          console.log(2);
+        }
+      }
+    </script>
   </head>
   <body>
     <div>
